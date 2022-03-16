@@ -4,7 +4,7 @@
 }
 .container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.5fr 2fr;
     height: 100vh;
 }
 .side-img-div {
@@ -39,19 +39,27 @@
     flex-direction: column;
     background-color: white;
     gap: 2em;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 
 }
 .form-container .form-input {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+.form-input {
+    width: 80%;
+}
 .form-input > div {
+    margin-top: 1em;
     display: flex;
     flex-direction: column;
 }
 input {
-    width: 40%;
+    max-width: 200px;
+    height: 2em;
     margin-top: .5em;
+    border: 1px solid lightgray;
+    border-radius: 5px;
 }
 .form-submission {
     margin-top: 2em;
@@ -64,5 +72,11 @@ input {
     padding: .25em 1em;
 }
 .form-submission p {
+    margin-top: 1em;
+}
+.sign-up-div p {
+    padding-left: 3em;
+}
+form {
     margin-top: 1em;
 }
